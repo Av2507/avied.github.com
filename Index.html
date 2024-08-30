@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whiteboard with Formula Bar</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="toolbar">
+            <button id="clearBtn">Clear Board</button>
+            <select id="equationSelect">
+                <option value="">Select Formula</option>
+                <option value="\a^2 + b^2 = c^2\">Pythagorean Theorem</option>
+                <option value="\ax^2 + bx + c = 0\">Quadratic Equation</option>
+                <option value="\e = mc^2\">Einstein's Equation</option>
+                <!-- Add more formulas relevant to Indian 9th-12th curriculum -->
+            </select>
+            <button id="insertEquation">Insert Formula</button>
+        </div>
+        <canvas id="whiteboard"></canvas>
+        <div class="formula-bar">
+            <div id="mathOutput"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+                  </html>
